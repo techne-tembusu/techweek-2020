@@ -19,6 +19,15 @@ canvas {
     padding-top: 7rem;
 }
 
+.event-panel-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-container {
+    width: 25rem;
+}
+
 h3 {
     font-size: 24px;
     font-weight: 300;
