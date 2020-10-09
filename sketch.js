@@ -3,6 +3,7 @@ var particles_b = [];
 var particles_c = [];
 var nums = 100;
 var noiseScale = 800;
+// let fr = 24;
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
@@ -10,6 +11,7 @@ function windowResized() {
 }
 
 function setup(){
+	// frameRate(fr);
     createCanvas(windowWidth, windowHeight);
 	background(0,0,0);
 	for(var i = 0; i < nums; i++){
