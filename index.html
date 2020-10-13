@@ -4,9 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css" />
-	<title>TchWeek 2020</title>
+	<title>TechWeek 2020</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>	
 	<script src="sketch.js"></script>
 </head>
@@ -29,7 +30,7 @@
         <section id="teas">
             <h1>Teas</h1>
             <div class="card-container">
-                <div class="card">
+                <div class="card" onclick="document.getElementById('tea1').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/Tea_GovTech_Eyung_bw_300x400.png">
                     </div>
@@ -41,7 +42,7 @@
                         <p>Wondering about the behind-the-scenes of SafeEntry QR codes or FluGoWhere? Join us in this special tea to learn more from the agency that brought to you some of Singapore's COVID-19 initiatives!</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('tea2').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/Tea_TTC_Kuik Shiao-yin_bw_300x400.png">
                     </div>
@@ -53,7 +54,7 @@
                         <p>Isolated and homebound. How can we cope and stay resilient in these trying times? Join us for a session of Ask Me Anything with Ms Kuik Shiao-yin as we seek to rediscover and understand our emotions on a deeper level.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('tea3').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/Tea_SaiSurya_bw_300x400.png">
                     </div>
@@ -65,7 +66,7 @@
                         <p>In this industry expert tea, you will have the opportunity to learn more about the work that Surya and his team are pursuing, even amidst the pandemic, as well as ask him questions about YSI and his entrepreneurship journey.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('tea4').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/hiverlab_300x400.png">
                     </div>
@@ -77,7 +78,7 @@
                         <p>Hiverlab's COO - Yuan Yi - talks about the history, the present state and the future for AR/VR technology and how it changes the way we live, work, and play.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('tea5').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/Tea_IDentifAI_ProfDeanHo_bw_300x400.png">
                     </div>
@@ -89,7 +90,7 @@
                         <p>Come hear about Prof Dean's insights into the capabilities of AI to revolutionize conventional approaches to medicine, and the significance of utilizing novel technologies to push the frontiers of healthcare.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('tea6').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/Tea_BerthaHenson_300x400.png">
                     </div>
@@ -106,7 +107,7 @@
         <section id="workshops">
             <h1>Workshops</h1>
             <div class="card-container">
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws1').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/jackie_tan_UpLevel_bw_300x400.png">
                     </div>
@@ -118,7 +119,7 @@
                         <p>Join Jackie in this session on unique, interesting and relevant sources of data that you can use to make your portfolio projects stand out. Move along, Titanic (a dataset)!</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws2').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/Bot_Chin_Hui_Maxx_bw_300x400.png">
                     </div>
@@ -130,7 +131,7 @@
                         <p>Know some Python and want to put those skills to use? Bop along to some lofi coding music while creating a Telegram Bot for a simple Friendship Test!</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws3').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/SL2_bw_300x400.png">
                     </div>
@@ -142,7 +143,7 @@
                         <p>Assemble a simple electric Halloween lantern by getting a hands-on experience with the equipment in our makerspace. You will learn how to solder, as well as use hand tools and power tools.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws4').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/melissa_bw_300x400.png">
                     </div>
@@ -154,7 +155,7 @@
                         <p>Always wanted to create digital art but not sure where to start? Come learn the basics of Adobe Illustrator, with tips to elevate your artwork!</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws5').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/hanming_bw_300x400.png">
                     </div>
@@ -166,7 +167,7 @@
                         <p>Wondering what UI/UX design is about? Wanting to design your own websites but unsure where to start? Fret not, this workshop is for you!</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws6').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/darryl_bw_300x400.png">
                     </div>
@@ -178,7 +179,7 @@
                         <p>Ever thought up a storyline idea but never realised it? Or a novella that you haven’t quite got around to penning down? Fret not - join us and make your ideas take wing!</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ws7').style.display='block'">
                     <div class="card-image">
                         <img src="./assets/zijie_bw_300x400.png">
                     </div>
@@ -195,7 +196,7 @@
         <section id="exhibitions">
             <h1>Exhibitions</h1>
             <div class="card-container">
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ex1').style.display='block'">
                     <div class="card-image">
                         <!-- <img src="http://lorempixel.com/output/city-q-g-640-480-2.jpg" alt="city"> -->
                     </div>
@@ -207,7 +208,7 @@
                         <p>C-A-T World (www.c-a-t.world) is a journey through six illustrated virtual worlds by artist Reza Hasni, set in the time of expanding cyberspace.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="document.getElementById('ex2').style.display='block'">
                     <div class="card-image">
                         <!-- <img src="http://lorempixel.com/output/city-q-g-640-480-2.jpg" alt="city"> -->
                     </div>
@@ -237,5 +238,219 @@
         </section>
     </main>
 </body>
+
+<div>
+    <div id="tea1" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('tea1').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Speaker Profile</h3>
+                <p>Eyung is the Director of the Digital Design & Development (DCube) team at the Government Digital Services (GDS) division in GovTech. His key roles include communicating with other government agencies to understand the issues faced by them and proposing how the various functional and cross-functional teams of GDS can come together to help. Within his team, he works with different team leads and oversees the delivery of products to the agencies.</p>
+                <br>
+                <h3>Company Profile</h3>
+                <p>Government Technology Agency of Singapore (GovTech) drives digital transformation within the public sector and harnesses the best technologies to make a difference to the everyday lives of Singaporeans. Specifically, DCube’s approach is guided by Agile and User Experience Design (UXD) principles to ensure that product development is conducted in a manner that is user-centric and iterative with continuous improvements. The digital services developed as an outcome of cross-team collaboration creates great impact to our society by bringing value to Singaporeans.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="tea2" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('tea2').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Speaker Profile</h3>
+                <p>Shiao-yin leads a group of social businesses known as The Thought Collective. Outside of the Collective, she served the public sector twice as a Nominated Member of Parliament in the 12th and 13th Parliament of Singapore. Sharing her insights into the emotional and narrative roots of change, she also helps the boards and committees she sits on strategically shape their approach to developing youth talent (SCAPE*) and nurturing cross-cultural harmony (OnePeople.sg). Shiao-Yin believes in helping young people realise their capacity to impact their culture and community through a thoughtful and compassionate approach to work.</p>
+                <br>
+                <h3>Company Profile</h3>
+                <p>The Thought Collective shares the common purpose of building up Singapore's social and emotional capital. Their group of social enterprises offers new possiblities in the way we think, live and serve as a community.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="tea3" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('tea3').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Speaker Profile</h3>
+                <p>An Economics and Mechanical Engineering double-degree undergraduate, Surya is a Tembusu alumni who deeply believes in the power of people and ideas. He puts it into practice through leading cross-functional teams in both technical and non-technical capacities within his 2 start-ups, one of which is the Young Sustainable Impact Southeast Asia (YSI SEA).</p>
+                <br>
+                <h3>Company Profile</h3>
+                <p>YSI SEA aims to bring passionate youths from around the world to tackle sustainability problems including energy transitions, food & agriculture, and circular economy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="tea4" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('tea4').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Company Profile</h3>
+                <p>Hiverlab is a media technology company which strives to enhance human capacities for an innovative and inclusive world. By advancing communication experiences, enabling digital transformation, and redefining human interaction, Hiverlab provides innovative solutions and products in the domains of Virtual Reality and beyond. As immersive technology becomes an integral part of organisations' daily operations in various industries, their role as a media technology enabler becomes ever more crucial and relevant.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="tea5" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('tea5').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Speaker Profile</h3>
+                <p>Prof Dean Ho is Provost’s Chair Professor, Director of The N.1 Institute for Health (N.1), Director of the Institute for Digital Medicine (WisDM), and Head of the Department of Biomedical Engineering at the National University of Singapore. Using his CURATE.AI platform, Prof Ho has led multiple pioneering clinical studies that have validated the promise of N-of-1 medicine, where only a patient’s own data is used to personalise their treatment for the entire duration of care. Multiple CURATE.AI-based clinical studies are ongoing or cleared for start in the areas of solid cancer and blood cancer therapy, digital therapeutics/personalised learning, and post-organ transplant immunosuppression, among others.</p>
+                <br>
+                <h3>Company Profile</h3>
+                <p>IDentif.AI harnesses the use of AI and Digital Medicine to rapidly optimise combination therapy design against infectious diseases. Unlike traditional AI methods. IDentif.AI does not use pre-existing data for algorithm training and predictions. Instead, it pairs prospective experimentation and optimisation to realise a data-backed and ranked list of combination therapy regimens for clinician selection.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="tea6" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('tea6').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Speaker Profile</h3>
+                <p>For 26 years, Bertha Henson was a journalist for the Singapore Press Holdings stable of newspapers. She covered Singapore developments and has had stints in the broadsheet's lifestyle section, political and news section, in addition to helming its photography and art departments. She was also a former deputy editor of The New Paper and her last designation was Associate Editor of The Straits Times.</p>
+                </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="ws1" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws1').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Instructor Profile</h3>
+                <p>Jackie strongly believes in closing skill gaps with project-based learning, having close to 400 students under his belt in the UpLevel's curriculum. He has also assisted regional MNCs and SMEs in their digital transformation through his design of a P2P algorithm for the unbanked population in SEA. An international speaker on entrepreneurship and AI and mentor for several entrepreneurship programs, he is one of the awardees of Forbes 30 under 30 and the National Youth Entrepreneurship Award.</div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="ws2" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws2').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Instructor Profile</h3>
+                <p>More than just disc-throwing buddies, Chin Hui and Maxx spend a bulk of their time exploring the realm of programming. Over the summer, Maxx has also been involved with Orbital, where his team's project clinched the Judge's Choice Award. Most recently, they picked up the skills of developing a Telegram Bot together.</p>
+            </div>
+    </div>
+</div>
+<div>
+    <div id="ws3" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws3').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Company Profile</h3>
+                <p>SL2 (Sustainable Living Lab) is a sustainability consultancy addressing the innovation needs of the 3P (Public, Private & People) sector in Singapore, Indonesia and India. As practitioners of future-thinking, they implement cutting-edge technologies and facilitate cross-sector collaboration for social impact.</p>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="ws4" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws4').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Instructor Profile</h3>
+                <p>Melissa is a digital artist who loves drawing landscapes, nature subjects and portraits. She was the co-publicity head of Tembusu Arts Council, overseeing design and publicity materials for arts events in the college. She is experienced in Adobe Illustrator and Photoshop, and designs for both personal and work projects. Her artworks can be seen on Instagram @mellowillustrates (and @mellowscribbles, if you’re into puns).</p>
+            </div>
+    </div>
+</div>
+<div>
+    <div id="ws5" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws5').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Instructor Profile</h3>
+                <p>Hanming was the Team Lead at Computing for Voluntary Welfare Organisations in 2020. The team developed a COVID-19 forward contact tracing system for Singapore's hospitals and the Ministry of Health, helping to trace over thousands of cases. Also the Creative Director and Co-Founder of digital learning platform Joni.AI, Hanming is passionate about building beautiful apps and making a positive difference in the world.</p>
+            </div>
+    </div>
+</div>
+<div>
+    <div id="ws6" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws6').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Instructor Profile</h3>
+                <p>Darryl is mostly using this workshop as an excuse to think about science fiction, but he'd be more than happy to drag a couple of people along for the ride.</p>
+            </div>
+    </div>
+</div>
+<div>
+    <div id="ws7" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ws7').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Instructor Profile</h3>
+                <p>Zijie is a watercolour artist who loves painting architectural and sci-fi illustrations. He has been feature in countless magazines, sites and worked with many clients including HBO, American Express and SCDF. He is experienced in procreate and design softwares to aid him with his artworks and projects. His illustrations can be found on instagram @artcrop.</p>
+            </div>
+    </div>
+</div>
+<div>
+    <div id="ex1" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ex1').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Exhibition Details</h3>
+                <p>TBC</p>
+            </div>
+    </div>
+</div>
+<div>
+    <div id="ex2" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('ex2').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container modal-content">
+                <h3>Exhibition Details</h3>
+                <p>TBC</p>
+            </div>
+    </div>
+</div>
 
 </html>
