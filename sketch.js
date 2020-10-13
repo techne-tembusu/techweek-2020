@@ -1,58 +1,50 @@
-var particles_a = [];
-var particles_b = [];
-var particles_c = [];
-var nums = 100;
-var noiseScale = 800;
-// let fr = 24;
+const particles = [[], [], []];
+const colors = ["27,30,57", "95,134,141", "229,83,76"]
+const nums = 80;
+const noiseScale = 800;
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     background(0,0,0);
 }
 
-function setup(){
-	// frameRate(fr);
-    createCanvas(windowWidth, windowHeight);
+function setup() {
+	createCanvas(windowWidth, windowHeight);
 	background(0,0,0);
-	for(var i = 0; i < nums; i++){
-		particles_a[i] = new Particle(random(0, width),random(0,height));
-		particles_b[i] = new Particle(random(0, width),random(0,height));
-		particles_c[i] = new Particle(random(0, width),random(0,height));
-	}
+	for (let i = 0; i < particles.length; i++)
+		for (let j = 0; j < nums; j++)
+			particles[i][j] = new Particle(random(0, width),random(0,height));
 }
 
 function draw(){
 	noStroke();
 	smooth();
-		for(var i = 0; i < nums; i++){
+	for (let i = 0; i < nums; i++) {
 		var radius = map(i,0,nums,1,2);
-		var alpha = map(i,0,nums,0,250);
+		var alpha = map(i,0,nums,0,1);
 
-		fill(27,30,57,alpha);
-		particles_a[i].move();
-		particles_a[i].display(radius);
-		particles_a[i].checkEdge();
-
-		fill(95,134,141,alpha);
-		particles_b[i].move();
-		particles_b[i].display(radius);
-		particles_b[i].checkEdge();
-
-		fill(229,83,76,alpha);
-		particles_c[i].move();
-		particles_c[i].display(radius);
-		particles_c[i].checkEdge();
+		for (let j = 0; j < 3; j++) {
+			fill(`rgba(${colors[j]}, ${alpha})`);
+			particles[j][i].draw(radius);
+		}
 	}  
 }
 
+class Particle {
+	constructor(x, y) {
+		this.dir = createVector(0, 0);
+		this.vel = createVector(0, 0);
+		this.pos = createVector(x, y);
+		this.speed = 0.4;
+	}
 
-function Particle(x, y){
-	this.dir = createVector(0, 0);
-	this.vel = createVector(0, 0);
-	this.pos = createVector(x, y);
-	this.speed = 0.4;
+	draw(r) {
+		this.move();
+		this.display(r);
+		this.checkEdge();
+	}
 
-	this.move = function(){
+	move() {
 		var angle = noise(this.pos.x/noiseScale, this.pos.y/noiseScale)*TWO_PI*noiseScale;
 		this.dir.x = cos(angle);
 		this.dir.y = sin(angle);
@@ -61,14 +53,15 @@ function Particle(x, y){
 		this.pos.add(this.vel);
 	}
 
-	this.checkEdge = function(){
-		if(this.pos.x > width || this.pos.x < 0 || this.pos.y > height || this.pos.y < 0){
+	checkEdge() {
+		if (this.pos.x > width || this.pos.x < 0 || this.pos.y > height || this.pos.y < 0) {
 			this.pos.x = random(50, width);
 			this.pos.y = random(50, height);
 		}
 	}
 
-	this.display = function(r){
+	display(r) {
 		ellipse(this.pos.x, this.pos.y, r, r);
+		if (this.speed > 0.1) this.speed *= 0.999;
 	}
 }
