@@ -154,6 +154,15 @@ h1 {
     padding: 60px; 
 }
 
+.more {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.more:hover {
+    text-decoration: underline
+}
+
 .modal-content {   
     background-color: black;
     padding: 30px 40px 40px 40px;
