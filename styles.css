@@ -135,6 +135,7 @@ section {
 h3 {
     font-size: 22px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -175,5 +176,10 @@ h1 {
 }
 
 ::selection {
-    background: rgb(162, 189, 194); /* WebKit/Blink Browsers */
+    background: rgba(162, 189, 194, 0.9); /* WebKit/Blink Browsers */
 }  
+
+.event-desc span {
+    /* background: rgba(229,83,76, 0.8); */
+    background: rgba(0, 0, 0, 0.8);
+}
