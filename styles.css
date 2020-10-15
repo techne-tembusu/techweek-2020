@@ -127,6 +127,10 @@ section#about {
     margin: 0 15vw; 
 }
 
+section#register {
+    justify-content: center;
+}
+
 section {
     margin: 50px;
 }
@@ -198,10 +202,10 @@ h1 {
   }
 
   .signup a:hover,
-  .navbar a:hover {
+  .navbar a:not(.nav-signup):hover {
     background-position: -99.99% 0;
   }
 
-  .navbar a span:hover {
-      text-decoration: underline;
+  .navbar .nav-signup:hover {
+    text-decoration: underline;
   }
